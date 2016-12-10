@@ -3,7 +3,7 @@
 //  First Swift App
 //
 //  Created by Roger Villarreal on 12/10/16.
-//  Copyright © 2016 Roger Villarreal. All rights reserved.
+//  Copyright © 2016 Roger Villarreal. All rights reserved....
 //
 
 import UIKit
@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         tapcount = tapcount + 1
-        if tapcount >= 10 {
-            theLabel.text = "You tapped the button 10 or more times!"
+        if tapcount >= 20 {
+            theLabel.text = "You tapped the button 20 or more times!"
         }
     }
     
