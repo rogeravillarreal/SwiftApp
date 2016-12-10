@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var theLabel: UILabel!
+    
+    var tapcount = 0
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        tapcount = tapcount + 1
+        if tapcount >= 10 {
+            theLabel.text = "You tapped the button 10 or more times!"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
