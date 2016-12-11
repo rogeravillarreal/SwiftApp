@@ -1,7 +1,15 @@
-var age = 30
+var mainLabel = ""
 
-if age >= 15 {
-    print("You can go on the ride")
-} else {
-    print("Not allowed kid!")
-}
+var num_1 = "6"
+
+var num_2 = "9"
+
+var addednumbers = Int(num_1)! + Int(num_2)!
+
+mainLabel = "The answer is: \(Double(num_1)! + Double(num_2)!)"
+
+
+
+
+
+		

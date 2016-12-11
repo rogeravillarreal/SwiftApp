@@ -12,13 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     var tapcount = 0
     
     @IBAction func buttonTapped(_ sender: Any) {
-        tapcount = tapcount + 1
-        if tapcount >= 20 {
-            theLabel.text = "You tapped the button 20 or more times!"
-        }
+       theLabel.text = "Answer is: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     
     override func viewDidLoad() {
